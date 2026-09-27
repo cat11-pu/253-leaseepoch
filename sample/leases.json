@@ -1,0 +1,15 @@
+{
+  "held_error_code": "E_LEASE_HELD",
+  "none_error_code": "E_NO_LEASE",
+  "event_error_code": "E_BAD_EVENT",
+  "budget": 1,
+  "state": { "epoch": 0, "active": {}, "expired": [], "reclaimed": [], "applied": [] },
+  "events": [
+    { "id": 1, "kind": "acquire", "holder": 1, "ttl": 3 },
+    { "id": 2, "kind": "acquire", "holder": 2, "ttl": 2 },
+    { "id": 3, "kind": "release", "holder": 2 },
+    { "id": 4, "kind": "acquire", "holder": 3, "ttl": 1 },
+    { "id": 5, "kind": "release", "holder": 1 },
+    { "id": 6, "kind": "release", "holder": 3 }
+  ]
+}
